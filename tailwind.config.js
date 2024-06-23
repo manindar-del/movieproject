@@ -14,6 +14,11 @@ module.exports = withMT({
         wiggle: 'wiggle 0.3s linear',
         'wiggle-opposite': 'wiggleOpposite 0.3s linear',
       },
+      height: {
+        '80': '20rem',  // 20rem = 320px
+        '60': '15rem',  // 15rem = 240px
+        '40': '10rem',  // 10rem = 160px
+      },
       colors: {
         'app-pure-white': 'hsl(0, 0%, 100%)', // #FFFFFF
         'app-red': 'hsl(0, 97%, 63%)', // #FC4747

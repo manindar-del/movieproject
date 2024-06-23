@@ -144,7 +144,7 @@
   }
 
   .bg-blue-app {
-    background-color: #66458b38;
+    background-color:#0c2236;
     max-width: 356px;
   }
 
@@ -179,28 +179,22 @@
   }
 
   .image-background img {
-    min-width: 90% !important;
-    min-height: 70% !important;
     border-radius: 30px;
   }
 
 
   .sideby {
-
-    background: #2d3952;
+    background: #2e3b55;
     padding: 32px;
     border-radius: 20px;
-    position: absolute;
-    bottom: 25px;
+    position: relative;
+    bottom: 45px;
   }
 
-  .top-margin-details {
-    margin-top: 35rem;
-  }
 
   @media (min-width: 1024px) {
     .sideby {
-      margin-left: 80px;
+      margin-left: 44px;
     }
 
     .none_display {
@@ -214,6 +208,8 @@
 
   }
 
+
+
   @media (max-width: 768px) {
     .font-large {
       font-size: 20px !important;
@@ -226,9 +222,6 @@
       display: none !important;
     }
 
-    .top-margin-details {
-      margin-top: 30rem;
-    }
 
     .ham {
       position: absolute;
@@ -308,7 +301,7 @@
   }
 
   .searchbar svg {
-    margin-top: 9px;
+    margin-top: 12px;
     margin-left: 7px;
   }
 

@@ -27,16 +27,16 @@ export default function TV() {
         <title>{movie.Title} | Entertainment App</title>
       </Head>
 
-      <div class="image-background ">
-        <Image
-          src={manageImage}
-          alt="Manage Image"
-          width={900}
-          height={900}
-          layout="fill"
-          objectFit="cover"
-        />
-      </div>
+      <div className="relative w-full h-40 md:h-60 lg:h-80 image-background">
+       <Image
+        src={manageImage}
+        alt="Manage Image"
+        layout="fill"
+        objectFit="cover"
+        className="absolute"
+        quality={100}
+      />
+ </div>
 
       <section className='md:w-2/5 sideby'>
         <h4 class="font-small">Lorem Ipsum / {movie?.Type}</h4>

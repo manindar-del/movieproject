@@ -29,17 +29,16 @@ export default function Movie() {
         <title>{movie.Title} | Entertainment App</title>
       </Head>
 
-       <div class="image-background ">
-        <Image
-          src={manageImage}
-          alt="Manage Image"
-          width={900}
-          height={900}
-          layout="fill"
-          objectFit="cover"
-        />
-      </div> 
-
+      <div className="relative w-full h-40 md:h-60 lg:h-80 image-background">
+       <Image
+        src={manageImage}
+        alt="Manage Image"
+        layout="fill"
+        objectFit="cover"
+        className="absolute"
+        quality={100}
+      />
+ </div>
       <section className='md:w-2/5 sideby'>
         <h4 class="font-small">Lorem Ipsum / {movie?.Type}</h4>
         <h1 class="font-large">{movie.Title}</h1>
@@ -50,12 +49,12 @@ export default function Movie() {
 
       ) : (
 
-        <div className='flex flex-col sm:mx-8 md:mx-0 md:flex-row md:items-start lg:justify-center top-margin-details'>
+        <section className='flex flex-col sm:mx-8 md:mx-0 md:flex-row md:items-start lg:justify-center top-margin-details'>
           <FilmImage
             src={movie.Poster}
             title={movie.title}
           />
-          <section className='md:w-3/5'>
+          <div className='md:w-3/5'>
             <h1 class="mb-6 font-medium">{movie?.Title}</h1>
             <p class="pcolor maxwidth">{movie?.Plot}</p>
             <FilmRating number={(movie.imdbRating)} />
@@ -73,13 +72,14 @@ export default function Movie() {
             <h1 class="pcolor font-small">Geners</h1>
             <h1 class="blackdark mb-6">{movie?.Genre}</h1>
 
-          </section>
         </div>
+        </section >
 
 
 
 
-      )}
+      )
+}
     </>
   )
 }
