@@ -43,8 +43,11 @@ export default function TV() {
         <h1 class="font-large">{movie.Title}</h1>
       </section>
 
-      {movie ? (
-        <section className='flex flex-col sm:mx-8 md:mx-0 md:flex-row md:items-start lg:justify-center top-margin-details'>
+      {movie === undefined ? (
+        <Loading />
+      ) : (
+
+        <div className='flex flex-col sm:mx-8 md:mx-0 md:flex-row md:items-start lg:justify-center top-margin-details'>
           <FilmImage
             src={movie.Poster}
             title={movie.title}
@@ -67,9 +70,9 @@ export default function TV() {
             <h1 class="blackdark mb-4">{movie?.Genre}</h1>
 
           </section>
-        </section>
-      ) : (
-        <Loading />
+        </div>
+
+
       )}
     </>
   )

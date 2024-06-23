@@ -19,7 +19,7 @@ export default function Movie() {
 
   const { data: movie, error: movieError } = useSWR(endPoint, fetcher)
 
-
+  console.log(movie, "rrrr")
   if (movieError) return <div>{movieError}</div>
   if (!movie) return <div>{movieError}</div>
 
@@ -29,7 +29,7 @@ export default function Movie() {
         <title>{movie.Title} | Entertainment App</title>
       </Head>
 
-      <div class="image-background ">
+       <div class="image-background ">
         <Image
           src={manageImage}
           alt="Manage Image"
@@ -38,15 +38,19 @@ export default function Movie() {
           layout="fill"
           objectFit="cover"
         />
-      </div>
+      </div> 
 
       <section className='md:w-2/5 sideby'>
         <h4 class="font-small">Lorem Ipsum / {movie?.Type}</h4>
         <h1 class="font-large">{movie.Title}</h1>
       </section>
 
-      {movie ? (
-        <section className='flex flex-col sm:mx-8 md:mx-0 md:flex-row md:items-start lg:justify-center top-margin-details'>
+      {movie === undefined ? (
+        <Loading />
+
+      ) : (
+
+        <div className='flex flex-col sm:mx-8 md:mx-0 md:flex-row md:items-start lg:justify-center top-margin-details'>
           <FilmImage
             src={movie.Poster}
             title={movie.title}
@@ -70,9 +74,11 @@ export default function Movie() {
             <h1 class="blackdark mb-6">{movie?.Genre}</h1>
 
           </section>
-        </section>
-      ) : (
-        <Loading />
+        </div>
+
+
+
+
       )}
     </>
   )

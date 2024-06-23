@@ -24,13 +24,13 @@ export default function Navigation({ children }) {
       <div class="container mx-auto">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div class="text-white-p p-1 text-left ham">
-          <Image
-          src={logo}
-          alt="logo Image"
-          width={40}
-          height={40}
-         
-        />
+            <Image
+              src={logo}
+              alt="logo Image"
+              width={40}
+              height={40}
+
+            />
           </div>
           <div class=" text-white-p p-1 none_display_">
             <a href="/" className='hover:text-amber-500'>
@@ -40,15 +40,22 @@ export default function Navigation({ children }) {
               <MenuItem title='TV Show' />
             </a>
             <a href="/" className='hover:text-amber-500'>
-              <MenuItem title='Suggest Me' />
+              
+                <MenuItem title='Suggest Me' />
+              
+              <div class="arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                </svg>
+              </div>
             </a>
 
-            </div>
+          </div>
 
-            <div className="md:hidden">
+          <div className="md:hidden">
             <button
               onClick={toggleMenu}
-              className="text-white focus:outline-none"
+              className="text-white optopn_ham focus:outline-none"
             >
               <svg
                 className="w-6 h-6"
@@ -65,46 +72,53 @@ export default function Navigation({ children }) {
                 />
               </svg>
             </button>
-        
-          {/* Menu Items */}
-          
-          <div
-            className={`${
-              menuOpen ? 'block' : 'hidden'
-            } md:flex md:items-center md:space-x-4 none_display`}
-          >
-            <Link href="/">
-              <a className="text-white">Movies</a>
-            </Link>
-            <Link href="/">
-              <a className="text-white">TV Show</a>
-            </Link>
-            <Link href="/">
-              <a className="text-white">Suggest Me</a>
-            </Link>
-          
-        </div>
-        </div>
-      {/* Main content */}
-      <main className="container mx-auto p-4">{children}</main>
 
-      {/* JavaScript for toggling menu */}
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
+            {/* Menu Items */}
+
+            <div
+              className={`${menuOpen ? 'block' : 'hidden'
+                } md:flex md:items-center md:space-x-4 none_display`}
+            >
+              <ul>
+                <li>
+                  <Link href="/">
+                    <a className="text-white">Movies</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/">
+                    <a className="text-white">TV Show</a>
+                  </Link>
+                </li>
+                <li>
+
+                </li>
+                <Link href="/">
+                  <a className="text-white">Suggest Me</a>
+                </Link>
+              </ul>
+            </div>
+          </div>
+          {/* Main content */}
+          <main className="container mx-auto p-4">{children}</main>
+
+          {/* JavaScript for toggling menu */}
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
             const toggleMenu = () => {
               const menu = document.getElementById('menu');
               menu.classList.toggle('hidden');
               menu.classList.toggle('block');
             };
           `,
-        }}
-      />
-  
-          </div>
+            }}
+          />
+
         </div>
       </div>
-   
+    </div>
+
   );
 }
 
