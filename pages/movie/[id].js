@@ -74,10 +74,6 @@ export default function Movie() {
 
           </div>
         </section >
-
-
-
-
       )
       }
     </>

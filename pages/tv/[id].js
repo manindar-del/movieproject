@@ -72,7 +72,6 @@ export default function TV() {
           </section>
         </div>
 
-
       )}
     </>
   )
