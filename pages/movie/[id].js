@@ -40,7 +40,7 @@ export default function Movie() {
         />
       </div>
       <section className='md:w-2/5 sideby'>
-        <h4 className="font-small">Lorem Ipsum / {movie?.Type}</h4>
+        <h4 className="font-small blue_back">Lorem Ipsum / {movie?.Type}</h4>
         <h1 className="font-large">{movie.Title}</h1>
       </section>
 

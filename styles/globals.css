@@ -144,7 +144,7 @@
   }
 
   .bg-blue-app {
-    background-color: #0c2236;
+    background-color: #0c22367a;
     max-width: 356px;
   }
 
@@ -184,11 +184,15 @@
 
 
   .sideby {
-    background: #2e3b55;
+    background: #242f49f0;
     padding: 21px;
     border-radius: 20px;
     position: relative;
     bottom: 50px;
+  }
+
+  .blue_back {
+    color: #b5aff1;
   }
 
 
