@@ -144,7 +144,7 @@
   }
 
   .bg-blue-app {
-    background-color: #0c22367a;
+    background-color: #0c2236;
     max-width: 356px;
   }
 
@@ -352,7 +352,7 @@
 
   .card-collection-wrapper .star {
     position: absolute;
-    top: 0px;
+    top: -6px;
     left: 9px;
   }
 
