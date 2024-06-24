@@ -1,10 +1,15 @@
-
+import Link from 'next/link';
 
 export default function MenuItem({ title, address, Icon }) {
 
   return (
    
-      <><p className='section-title sm:inline text-sm'>{title}</p></>
+      <>
+       <Link href="/" className='hover:text-amber-500' passHref>
+       <p className='section-title sm:inline text-sm'>{title}</p>
+       </Link>
+      
+      </>
  
   );
 }

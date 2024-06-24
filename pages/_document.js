@@ -12,12 +12,13 @@ export default function Document() {
           rel='stylesheet'
         />
          <link href="https://unpkg.com/@material-tailwind/html@latest/styles.css" rel="stylesheet"></link>
+         <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/tabs.js" strategy="beforeInteractive"  async />
       </Head>
       <body>
         <Main />
         <NextScript />
         
-        <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/tabs.js" strategy="beforeInteractive" />
+      
       </body>
     </Html>
   )

@@ -13,7 +13,7 @@ export default function CardImage({src, alt }) {
           alt={alt}
           layout='fill'
           objectFit='cover'
-          placeholder='blur'
+    
         />
       </div>
     

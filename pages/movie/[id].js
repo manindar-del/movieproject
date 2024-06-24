@@ -40,8 +40,8 @@ export default function Movie() {
         />
       </div>
       <section className='md:w-2/5 sideby'>
-        <h4 class="font-small">Lorem Ipsum / {movie?.Type}</h4>
-        <h1 class="font-large">{movie.Title}</h1>
+        <h4 className="font-small">Lorem Ipsum / {movie?.Type}</h4>
+        <h1 className="font-large">{movie.Title}</h1>
       </section>
 
       {movie === undefined ? (
@@ -55,22 +55,22 @@ export default function Movie() {
             title={movie.title}
           />
           <div className='md:w-3/5'>
-            <h1 class="mb-6 font-medium">{movie?.Title}</h1>
-            <p class="pcolor maxwidth">{movie?.Plot}</p>
+            <h1 className="mb-6 font-medium">{movie?.Title}</h1>
+            <p className="pcolor maxwidth">{movie?.Plot}</p>
             <FilmRating number={(movie.imdbRating)} />
 
-            <h1 class="pcolor font-small ">type</h1>
-            <h1 class="blackdark mb-6">{movie?.Type}</h1>
+            <h1 className="pcolor font-small ">type</h1>
+            <h1 className="blackdark mb-6">{movie?.Type}</h1>
 
-            <h1 class="pcolor font-small">Release Date</h1>
+            <h1 className="pcolor font-small">Release Date</h1>
 
-            <h1 class="blackdark mb-6">{movie?.Released}</h1>
+            <h1 className="blackdark mb-6">{movie?.Released}</h1>
 
-            <h1 class="pcolor font-small">Run Time</h1>
-            <h1 class="blackdark mb-6">{movie?.Runtime}</h1>
+            <h1 className="pcolor font-small">Run Time</h1>
+            <h1 className="blackdark mb-6">{movie?.Runtime}</h1>
 
-            <h1 class="pcolor font-small">Geners</h1>
-            <h1 class="blackdark mb-6">{movie?.Genre}</h1>
+            <h1 className="pcolor font-small">Geners</h1>
+            <h1 className="blackdark mb-6">{movie?.Genre}</h1>
 
           </div>
         </section >

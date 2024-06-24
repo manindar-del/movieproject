@@ -21,9 +21,9 @@ export default function Navigation({ children }) {
     <div style={{ width: "100%" }} className='justify-between  mx-auto text-right'>
 
 
-      <div class="container mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div class="text-white-p p-1 text-left ham">
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="text-white-p p-1 text-left ham">
             <Image
               src={logo}
               alt="logo Image"
@@ -32,23 +32,23 @@ export default function Navigation({ children }) {
 
             />
           </div>
-          <div class=" text-white-p p-1 none_display_">
-            <a href="/" className='hover:text-amber-500'>
-              <MenuItem title='Movie' />
-            </a>
-            <a href="/" className='hover:text-amber-500'>
-              <MenuItem title='TV Show' />
-            </a>
-            <a href="/" className='hover:text-amber-500'>
-              
-                <MenuItem title='Suggest Me' />
-              
-              <div class="arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                </svg>
-              </div>
-            </a>
+          <div className=" text-white-p p-1 none_display_">
+          <span className="p-1_menu">
+            <MenuItem title='Movie' />
+            </span>
+            <span className="p-1_menu">
+            <MenuItem title='TV Show' />
+            </span>
+            <span className= "p-1_menu">
+            <MenuItem title='Suggest Me' />
+            
+
+            <div className="arrow">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+            </span>
 
           </div>
 

@@ -39,13 +39,13 @@ export default function TV() {
       </div>
 
       <section className='md:w-2/5 sideby'>
-        <h4 class="font-small">Lorem Ipsum / {movie?.Type}</h4>
-        <h1 class="font-large">{movie.Title}</h1>
+        <h4 className="font-small">Lorem Ipsum / {movie?.Type}</h4>
+        <h1 className="font-large">{movie.Title}</h1>
       </section>
 
       {movie === undefined ? (
         <Loading />
-        
+
       ) : (
 
         <div className='flex flex-col sm:mx-8 md:mx-0 md:flex-row md:items-start lg:justify-center top-margin-details'>
@@ -54,21 +54,21 @@ export default function TV() {
             title={movie.title}
           />
           <section className='md:w-3/5'>
-            <h1 class="mb-6 font-medium">{movie?.Title}</h1>
-            <p class="pcolor maxwidth">{movie?.Plot}</p>
+            <h1 className="mb-6 font-medium">{movie?.Title}</h1>
+            <p className="pcolor maxwidth">{movie?.Plot}</p>
             <FilmRating number={(movie.imdbRating)} />
 
-            <h1 class="pcolor font-small ">type</h1>
-            <h1 class="blackdark mb-4">{movie?.Type}</h1>
+            <h1 className="pcolor font-small ">type</h1>
+            <h1 className="blackdark mb-4">{movie?.Type}</h1>
 
-            <h1 class="pcolor font-small">Release Date</h1>
-            <h1 class="blackdark mb-4">{movie?.Released}</h1>
+            <h1 className="pcolor font-small">Release Date</h1>
+            <h1 className="blackdark mb-4">{movie?.Released}</h1>
 
-            <h1 class="pcolor font-small">Run Time</h1>
-            <h1 class="blackdark mb-4">{movie?.Runtime}</h1>
+            <h1 className="pcolor font-small">Run Time</h1>
+            <h1 className="blackdark mb-4">{movie?.Runtime}</h1>
 
-            <h1 class="pcolor font-small">Geners</h1>
-            <h1 class="blackdark mb-4">{movie?.Genre}</h1>
+            <h1 className="pcolor font-small">Geners</h1>
+            <h1 className="blackdark mb-4">{movie?.Genre}</h1>
 
           </section>
         </div>

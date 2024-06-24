@@ -6,7 +6,7 @@ const nextConfig = {
     defaultLocale: 'en',
   },
   images: {
-    domains: ['source.unsplash.com', 'img.omdbapi', "m.media-amazon"],
+    domains: ['source.unsplash.com', 'img.omdbapi', "m.media-amazon.com"],
   },
   reactStrictMode: true,
   env: {
@@ -16,4 +16,4 @@ const nextConfig = {
 
 }
 
-module.exports = nextConfig
+module.exports = nextConfig;

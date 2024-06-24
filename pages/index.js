@@ -22,10 +22,10 @@ export default function Home() {
       <Head>
         <title>Home | Entertainment App</title>
       </Head>
-      <div class="container mx-auto p-4">
-      <h1 class="title">Lorem Ipsum</h1>
-      <p class="description"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
-      <div class="searchbar">
+      <div className="container mx-auto p-4">
+      <h1 className="title">Lorem Ipsum</h1>
+      <p className="description"> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make </p>
+      <div className="searchbar">
         <SearchBar
           text=""
           value={query}

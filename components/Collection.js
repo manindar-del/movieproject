@@ -19,11 +19,11 @@ export default function Collection({
   
   setQuerys(data)
   return (
-    <div class="container mx-auto">
+    <div className="container mx-auto">
       {data?.Search?.length > 0 ?
-        <div class="grid">
+        <div className="grid">
           {data ?
-            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {data?.Search?.map((item) => {
                 return (
                   <section

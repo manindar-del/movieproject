@@ -263,6 +263,10 @@
   .font-medium {
     font-size: x-large;
   }
+  span.p-1_menu{
+    margin-right: 26px;
+    cursor: pointer;
+  }
 
   a[aria-selected="true"] {
     background: #6c6aef;
