@@ -45,6 +45,7 @@ export default function TV() {
 
       {movie === undefined ? (
         <Loading />
+        
       ) : (
 
         <div className='flex flex-col sm:mx-8 md:mx-0 md:flex-row md:items-start lg:justify-center top-margin-details'>
