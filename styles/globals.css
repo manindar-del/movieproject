@@ -144,7 +144,7 @@
   }
 
   .bg-blue-app {
-    background-color:#0c2236;
+    background-color: #0c2236;
     max-width: 356px;
   }
 
@@ -192,6 +192,11 @@
   }
 
 
+  .card-collection-wrapper img {
+    width: 100%;
+  }
+
+
   @media (min-width: 1024px) {
     .sideby {
       margin-left: 44px;
@@ -205,6 +210,10 @@
       margin-bottom: 89px;
     }
 
+    .card-collection-wrapper img {
+      height: 400px;
+
+    }
 
   }
 
@@ -214,7 +223,8 @@
     .font-large {
       font-size: 20px !important;
     }
-    .title{
+
+    .title {
       font-size: 37px;
     }
 
@@ -226,13 +236,14 @@
     .ham {
       position: absolute;
     }
-
   }
-  .none_display{
+
+  .none_display {
     z-index: 999;
     position: relative;
   }
-  .optopn_ham{
+
+  .optopn_ham {
     position: relative;
     z-index: 99;
   }
@@ -263,7 +274,8 @@
   .font-medium {
     font-size: x-large;
   }
-  span.p-1_menu{
+
+  span.p-1_menu {
     margin-right: 26px;
     cursor: pointer;
   }
@@ -332,6 +344,8 @@
     border-radius: 17px;
   }
 
+
+
   .card-collection-wrapper .star {
     position: absolute;
     top: 0px;
@@ -346,9 +360,10 @@
     background: #171e31;
   }
 
-  .background-blue{
-    background:#141b2c;
+  .background-blue {
+    background: #141b2c;
   }
+
   @keyframes ball2 {
     0% {
       box-shadow: 30px 0 0 #97bf0d;
