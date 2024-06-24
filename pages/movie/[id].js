@@ -30,15 +30,15 @@ export default function Movie() {
       </Head>
 
       <div className="relative w-full h-40 md:h-60 lg:h-80 image-background">
-       <Image
-        src={manageImage}
-        alt="Manage Image"
-        layout="fill"
-        objectFit="cover"
-        className="absolute"
-        quality={100}
-      />
- </div>
+        <Image
+          src={manageImage}
+          alt="Manage Image"
+          layout="fill"
+          objectFit="cover"
+          className="absolute"
+          quality={100}
+        />
+      </div>
       <section className='md:w-2/5 sideby'>
         <h4 class="font-small">Lorem Ipsum / {movie?.Type}</h4>
         <h1 class="font-large">{movie.Title}</h1>
@@ -72,14 +72,14 @@ export default function Movie() {
             <h1 class="pcolor font-small">Geners</h1>
             <h1 class="blackdark mb-6">{movie?.Genre}</h1>
 
-        </div>
+          </div>
         </section >
 
 
 
 
       )
-}
+      }
     </>
   )
 }
