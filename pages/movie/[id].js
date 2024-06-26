@@ -59,7 +59,7 @@ export default function Movie() {
             <p className="pcolor maxwidth">{movie?.Plot}</p>
             <FilmRating number={(movie.imdbRating)} />
 
-            <h1 className="pcolor font-small ">type</h1>
+            <h1 className="pcolor font-small ">Type</h1>
             <h1 className="blackdark mb-6">{movie?.Type}</h1>
 
             <h1 className="pcolor font-small">Release Date</h1>

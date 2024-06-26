@@ -55,7 +55,7 @@
   }
 
   .card-collection-wrapper {
-    @apply flex flex-col items-center gap-4 sm:gap-x-7 sm:gap-y-6 xl:gap-x-10 xl:gap-y-8 2xs:flex-row 2xs:flex-wrap 2xs:justify-between;
+    @apply flex flex-col items-center gap-4 sm:gap-x-7 sm:gap-y-6 xl:gap-x-10 xl:gap-y-8 2xs:flex-wrap 2xs:justify-between;
   }
 
   .card-hover-animation {
@@ -160,7 +160,7 @@
   }
 
   .pcolor {
-    color: #ffffffa3;
+    color: #70788e;
   }
 
   .blackdark {
