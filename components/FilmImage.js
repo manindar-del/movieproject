@@ -3,7 +3,7 @@ import { shimmer, TMDB_IMAGE_ENDPOINT, toBase64 } from '../utils'
 
 export default function FilmImage({ src, title }) {
   return (
-    <section className='px-20 text-center md:pr-8 md:pl-0'>
+    <section className='px-20 text-center md:pr-8 space md:pl-0'>
       <img
         className='rounded-lg'
         src={`${src}`}

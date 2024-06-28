@@ -136,13 +136,17 @@
 
   .searchbar {
     display: flex;
-    width: 327px;
+    max-width: 327px;
     border: 1px solid #ffffff40;
     margin-bottom: 80px;
     border-radius: 6px;
     height: 57px;
   }
 
+  .rounded-lg{
+    border-radius: 1.5rem!important;
+  }
+  
   .bg-blue-app {
     background-color: #0c2236;
     max-width: 356px;
@@ -218,6 +222,15 @@
       height: 350px;
 
     }
+    .spacerightleft{
+      margin-left: 8rem!important;
+      margin-right: 8rem!important;
+    }
+    .space{
+      margin-left: 3rem!important;
+      margin-right: 2rem!important;
+     }
+  
 
   }
 
@@ -264,6 +277,9 @@
 
   .maxwidth {
     max-width: 500px;
+  }
+  img{
+    cursor:pointer;
   }
 
   .font-small {

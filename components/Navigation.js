@@ -24,6 +24,7 @@ export default function Navigation({ children }) {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="text-white-p p-1 text-left ham">
+          <Link href="/" className='hover:text-amber-500' passHref>
             <Image
               src={logo}
               alt="logo Image"
@@ -31,6 +32,7 @@ export default function Navigation({ children }) {
               height={40}
 
             />
+            </Link>
           </div>
           <div className=" text-white-p p-1 none_display_">
           <span className="p-1_menu">
